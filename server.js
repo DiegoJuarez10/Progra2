@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 
 //require("./app/routes/tutorial.routes")(app); //importar todos los posibles datos
 require("./app/routes/cliente.routes")(app);
+require("./app/routes/proveedor.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
